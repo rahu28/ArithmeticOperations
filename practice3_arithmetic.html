@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset=utf-8 />
+    <link rel="stylesheet" href="practice3_arithmetic.css" />
+    <script type="application/javascript" src="practice3_arithmetic.js"></script>
+</head>
+<body>
+    <div id="container">
+        <section id="wrapper">
+            <header>
+                <p>Perform Arithmetic Operations</p>
+            </header>
+            <article id="float1"> 
+                <p>Number1</p> 
+                <input type="number" id="num1"/>
+            </article>
+
+            <article id="float2"> 
+                <p>Number2</p> 
+                <input type="number" id="num2"/>
+            </article>
+            <article id="answer">
+                <p>Choice</p>
+                <input type="text" id="choice" onkeypress="return isNumber(event)" maxlength="1"/>
+                <br />
+                <button onclick="performArithmetic()">Perform</button>
+            </article>
+        </section>
+        <aside id="side_info">
+            <p>Select Appropriate</p>
+                <ol>
+                <li>Addition</li>
+                <li>Substraction</li>
+                <li>Multiplication</li>
+                <li>Division</li>
+                <li>Modulus</li>
+                </ol>
+        </aside>
+        <footer id="output"></footer>  
+    </div>
+</body>
+
+
+</html>
